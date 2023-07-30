@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsApp
 {
-    public static class Function1
+    public static class AzureServerless
     {
-        [FunctionName("Function1")]
+        [FunctionName("AzureServerless")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
